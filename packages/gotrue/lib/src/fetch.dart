@@ -127,6 +127,9 @@ class GotrueFetch {
       headers[Constants.apiVersionHeaderName] = ApiVersions.v20240101.name;
     }
 
+    // Принудительно устанавливаем безопасный User-Agent
+    headers['User-Agent'] = 'Flutter/3.8.1 (Windows NT 10.0; Win64; x64)';
+
     if (options?.jwt != null) {
       headers['Authorization'] = 'Bearer ${options!.jwt}';
     }

@@ -7,6 +7,7 @@ class Constants {
   static const String defaultAudience = '';
   static const Map<String, String> defaultHeaders = {
     'X-Client-Info': 'gotrue-dart/$version',
+    'User-Agent': 'Flutter/3.8.1 (Windows NT 10.0; Win64; x64)',
   };
   static const int defaultExpiryMargin = 60 * 1000;
 
